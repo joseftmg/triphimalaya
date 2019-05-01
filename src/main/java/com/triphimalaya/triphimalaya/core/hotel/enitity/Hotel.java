@@ -17,7 +17,7 @@ public class Hotel {
     @GeneratedValue
     private long id;
     private String name;
-    private String contactNp;
+    private String contactNo;
     private boolean isWifi;
     private boolean isShower;
     private boolean isCharging;

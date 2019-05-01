@@ -36,7 +36,7 @@ public class HotelServiceImpl implements HotelService {
 
     @Override
     public List<Hotel> findByLocation(String location){
-        return hotelRepository.findByLocation(location);
+        return hotelRepository.findAllByLocation(location);
     }
 
 }

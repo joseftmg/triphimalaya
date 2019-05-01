@@ -1,4 +1,4 @@
-package com.triphimalaya.triphimalaya.core.guide.enitity;
+package com.triphimalaya.triphimalaya.core.role.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,11 +12,9 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Guide {
+public class Role {
     @Id
     @GeneratedValue
     private long id;
     private String name;
-    private String address;
-    private String location;
 }
