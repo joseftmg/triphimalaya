@@ -31,4 +31,9 @@ public class SiteServiceImpl implements SiteService {
         siteRepository.delete(site);
         return site;
     }
+
+    @Override
+    public List<Site> findAllByName(String name) {
+        return siteRepository.findAllByName(name);
+    }
 }

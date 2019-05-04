@@ -21,7 +21,10 @@ public class User {
     @GeneratedValue
     private long id;
     private String name;
-
+    private String address;
+    private String email;
+    private String password;
+    private String contactNo;
     @ManyToMany
     private Set<Guide> guides;
 
