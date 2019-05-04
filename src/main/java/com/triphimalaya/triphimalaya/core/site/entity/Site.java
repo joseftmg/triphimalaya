@@ -1,4 +1,4 @@
-package com.triphimalaya.triphimalaya.core.guide.enitity;
+package com.triphimalaya.triphimalaya.core.site.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,17 +7,19 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Guide {
+public class Site {
     @Id
     @GeneratedValue
     private long id;
     private String name;
-    private String address;
-    private String location;
-    private String string;
+    @Lob
+    private String details;
+    private String longitude;
+    private String latitude;
 }

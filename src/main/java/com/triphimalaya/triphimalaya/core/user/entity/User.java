@@ -1,6 +1,7 @@
 package com.triphimalaya.triphimalaya.core.user.entity;
 
 import com.triphimalaya.triphimalaya.core.guide.enitity.Guide;
+import com.triphimalaya.triphimalaya.core.hotel.enitity.Hotel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,5 +24,8 @@ public class User {
 
     @ManyToMany
     private Set<Guide> guides;
+
+    @ManyToMany
+    private Set<Hotel> hotels;
 
 }
