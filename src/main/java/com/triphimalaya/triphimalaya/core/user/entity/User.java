@@ -2,14 +2,12 @@ package com.triphimalaya.triphimalaya.core.user.entity;
 
 import com.triphimalaya.triphimalaya.core.guide.enitity.Guide;
 import com.triphimalaya.triphimalaya.core.hotel.enitity.Hotel;
+import com.triphimalaya.triphimalaya.core.role.entity.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
@@ -25,6 +23,10 @@ public class User {
     private String email;
     private String password;
     private String contactNo;
+    private String imagePath;
+    @OneToOne
+    private Role role;
+
     @ManyToMany
     private Set<Guide> guides;
 

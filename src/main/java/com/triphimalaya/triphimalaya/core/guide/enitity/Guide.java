@@ -20,4 +20,5 @@ public class Guide {
     private String address;
     private String location;
     private String string;
+    private String imagePath;
 }

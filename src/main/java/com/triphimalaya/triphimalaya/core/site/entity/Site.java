@@ -22,4 +22,5 @@ public class Site {
     private String details;
     private String longitude;
     private String latitude;
+    private String imagePath;
 }
